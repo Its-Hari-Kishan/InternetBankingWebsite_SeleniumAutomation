@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "InetBankingV1">
+
+	<listeners>
+		<listener class-name="com.inetbanking.utilities.Reporting" />
+	</listeners>
+
+	<test name = "BankingApp Test">
+	
+		<parameter name = "browser" value = "chrome" />
+		
+		<classes>
+			 	<class name = "com.inetbanking.testCases.TC_LoginTest_001" />
+				<class name = "com.inetbanking.testCases.TC_LoginDDT_002" /> 	 
+		<!--	<class name = "com.inetbanking.testCases.TC_AddCustomerTest_003" />  
+			 	<class name = "com.inetbanking.testCases.TC_EditCustomerTest_004" />	-->
+		
+		<!--	<class name = "com.inetbanking.testCases.TC_DeleteCustomerTest_005" />	-->
+		
+		<!--  	<class name = "com.inetbanking.testCases.TC_AddNewAccountTest_006" />	
+				<class name = "com.inetbanking.testCases.TC_EditExistingAccountTest_007" />		
+			  	
+			  	<class name = "com.inetbanking.testCases.TC_DeleteExistingAccountTest_008" />	
+				
+				<class name = "com.inetbanking.testCases.TC_DepositMoneyInAccountTest_009" />	
+				<class name = "com.inetbanking.testCases.TC_WithdrawMoneyFromAccountTest_010" />	
+				<class name = "com.inetbanking.testCases.TC_FundTransferTest_011" />	
+				<class name = "com.inetbanking.testCases.TC_ChangeLoginPasswordTest_012" /> 
+				<class name = "com.inetbanking.testCases.TC_BalanceEnquiryTest_013" />	
+				<class name = "com.inetbanking.testCases.TC_MiniStatementTest_014" />	
+				<class name = "com.inetbanking.testCases.TC_CustomisedStatementTest_015" />		-->
+				
+		</classes>	
+		
+	</test>
+	
+</suite>
